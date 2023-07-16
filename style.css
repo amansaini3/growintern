@@ -1003,24 +1003,6 @@ p.footer-copyright {
 .quick-links{
     margin-left: 50px;
 }
-.footer-link .fa-linkedin{
-   color: #0A66C2;
-
-}
-.footer-link .fa-facebook{
-   color: #3b5998;
-
-}
-.footer-link .fa-instagram{
-    
-background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
- 
-
-}
-.footer-link .fa-twitter{
-   color: #00acee;
-
-}
 
 
 @media screen and (max-width: 800px) {
