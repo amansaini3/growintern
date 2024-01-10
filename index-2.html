@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="style.css">
     
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script
         nonce="c6427849-6ef9-4732-98be-212dc726fa7f">(function (w, d) { !function (bg, bh, bi, bj) { bg[bi] = bg[bi] || {}; bg[bi].executed = []; bg.zaraz = { deferred: [], listeners: [] }; bg.zaraz.q = []; bg.zaraz._f = function (bk) { return function () { var bl = Array.prototype.slice.call(arguments); bg.zaraz.q.push({ m: bk, a: bl }) } }; for (const bm of ["track", "set", "debug"]) bg.zaraz[bm] = bg.zaraz._f(bm); bg.zaraz.init = () => { var bn = bh.getElementsByTagName(bj)[0], bo = bh.createElement(bj), bp = bh.getElementsByTagName("title")[0]; bp && (bg[bi].t = bh.getElementsByTagName("title")[0].text); bg[bi].x = Math.random(); bg[bi].w = bg.screen.width; bg[bi].h = bg.screen.height; bg[bi].j = bg.innerHeight; bg[bi].e = bg.innerWidth; bg[bi].l = bg.location.href; bg[bi].r = bh.referrer; bg[bi].k = bg.screen.colorDepth; bg[bi].n = bh.characterSet; bg[bi].o = (new Date).getTimezoneOffset(); if (bg.dataLayer) for (const bt of Object.entries(Object.entries(dataLayer).reduce(((bu, bv) => ({ ...bu[1], ...bv[1] })), {}))) zaraz.set(bt[0], bt[1], { scope: "page" }); bg[bi].q = []; for (; bg.zaraz.q.length;) { const bw = bg.zaraz.q.shift(); bg[bi].q.push(bw) } bo.defer = !0; for (const bx of [localStorage, sessionStorage]) Object.keys(bx || {}).filter((bz => bz.startsWith("_zaraz_"))).forEach((by => { try { bg[bi]["z_" + by.slice(7)] = JSON.parse(bx.getItem(by)) } catch { bg[bi]["z_" + by.slice(7)] = bx.getItem(by) } })); bo.referrerPolicy = "origin"; bo.src = "../../cdn-cgi/zaraz/sd0d9.js?z=" + btoa(encodeURIComponent(JSON.stringify(bg[bi]))); bn.parentNode.insertBefore(bo, bn) };["complete", "interactive"].includes(bh.readyState) ? zaraz.init() : bg.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);</script>
 </head>
@@ -55,8 +56,8 @@
                     <div class="col-12">
                         <div class="hero-content-wrap flex flex-column justify-content-center align-items-start">
                             <header class="entry-header">
-                                <h4>Internships that Shape Futures!</h4>
-                                <h1>Transforming minds<br />through internships</h1>
+                                <h4 data-aos="fade-right">Internships that Shape Futures!</h4>
+                                <h1 data-aos="fade-left">Transforming minds<br />through internships</h1>
                             </header>
                             <div class="entry-content">
                                 <p> GrowIntern is a leading provider of internship opportunities for students and recent graduates. We offer a variety of internships in a variety of fields, so you can find the perfect internship for your interests and career goals.
@@ -74,7 +75,8 @@
     <div class="icon-boxes" id="About">
         <div class="container-fluid">
             <div class="flex flex-wrap align-items-stretch">
-                <div class="icon-box">
+                <div class="icon-box" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                     <div class="icon">
                     
                    <span><i class="fa-solid fa-computer"></i></span>
@@ -89,7 +91,8 @@
                         <a href="#">Learn more<i class="fa fa-long-arrow-right"></i></a>
                     </footer>
                 </div>
-                <div class="icon-box">
+                <div class="icon-box" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                     <div class="icon">
                         <span><i class="fa-solid fa-globe"></i></span>
                     </div>
@@ -103,7 +106,8 @@
                         <a href="#">Learn more<i class="fa fa-long-arrow-right"></i></a>
                     </footer>
                 </div>
-                <div class="icon-box">
+                <div class="icon-box" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                     <div class="icon">
                         <span><i class="fa-solid fa-user"></i></span>
                     </div>
@@ -117,7 +121,8 @@
                         <a href="#">Learn more<i class="fa fa-long-arrow-right"></i></a>
                     </footer>
                 </div>
-                <div class="icon-box">
+                <div class="icon-box" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                     <div class="icon">
                         <span><i class="fa-solid fa-chalkboard-user"></i></span>
                     </div>
@@ -134,9 +139,16 @@
             </div>
         </div>
     </div>
-    <section class="about-section">
-        <div class="container">
+    
+    <section class="about-section" data-aos="zoom-in">
+        <div class="container" >
             <div class="row">
+                
+                <div class="col-12 col-lg-6 flex align-content-center mt-5 mt-lg-0">
+                    <div class="ezuca-video position-relative">
+                        <img src="images/dreams.jpg" alt="">
+                    </div>
+                </div>
                 <div class="col-12 col-lg-6 align-content-lg-stretch">
                     <header class="heading">
                         <h2 class="entry-title">Follow your dreams with GrowIntern.</h2>
@@ -157,17 +169,33 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-section about-section2" data-aos="zoom-in" >
+        <div class="container" >
+            <div class="row">
+                <div class="col-12 col-lg-6 align-content-lg-stretch">
+                    <header class="heading">
+                        <h2 class="entry-title">Join Us in Cultivating Future Leaders</h2>
+                        <p>GrowIntern is more than an internship provider; we are a community committed to cultivating future leaders. Join us on this exciting journey of growth, exploration, and professional development. 
+                            <br><br>
+                          We understand the challenges young talents face as they step into the dynamic world of work, and we are here to make that transition smoother, impactful, and rewarding.</p>
+                    </header>
+                    
+                </div>
                 <div class="col-12 col-lg-6 flex align-content-center mt-5 mt-lg-0">
                     <div class="ezuca-video position-relative">
-                        <img src="images/dreams.jpg" alt="">
+                        <img src="images/dreams-2.jpg" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="testimonial-section">
+    <section class="testimonial-section" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
        <div class="mid-container">
-        <h2 class="entry-title">"Opening Doors to Success: Guiding Students towards Life-Changing Internship Opportunities."</h2>
+        <h2 class="entry-title">Guiding Students towards Life-Changing Internship Opportunities.</h2>
        <div class="mid-text">Start your Internship with GrowIntern</div>
         
          </div>
@@ -180,7 +208,8 @@
                         <h2 class="entry-title">Our Internships</h2>
                     </header>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 px-25">
+                <div class="col-12 col-md-6 col-lg-4 px-25" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                     <div class="course-content">
                         <figure class="course-thumbnail">
                             <a><img src="images/web-w.jpg" alt=""></a>
@@ -200,7 +229,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 px-25">
+                <div class="col-12 col-md-6 col-lg-4 px-25" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                     <div class="course-content">
                         <figure class="course-thumbnail">
                             <a ><img src="images/android1-w.jpg" alt=""></a>
@@ -220,7 +250,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 px-25">
+                <div class="col-12 col-md-6 col-lg-4 px-25" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                     <div class="course-content">
                         <figure class="course-thumbnail">
                             <a><img src="images/Fullstack-w1.jpeg" alt=""></a>
@@ -240,7 +271,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 px-25">
+                <div class="col-12 col-md-6 col-lg-4 px-25" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                     <div class="course-content">
                         <figure class="course-thumbnail">
                             <a ><img src="images/graphicdesign-w.jpg" alt=""></a>
@@ -260,7 +292,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 px-25">
+                <div class="col-12 col-md-6 col-lg-4 px-25" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                     <div class="course-content">
                         <figure class="course-thumbnail">
                             <a ><img src="images/datascience-w.jpg" alt=""></a>
@@ -280,7 +313,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 px-25">
+                <div class="col-12 col-md-6 col-lg-4 px-25" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                     <div class="course-content">
                         <figure class="course-thumbnail">
                             <a ><img src="images/cloud-w.jpg" alt=""></a>
@@ -300,10 +334,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 px-25">
+                <div class="col-12 col-md-6 col-lg-4 px-25" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                     <div class="course-content">
                         <figure class="course-thumbnail">
-                            <a><img src="images/machine-w.jpg" alt=""></a>
+                            <a><img src="images/machine.jpg" alt=""></a>
                         </figure>
                         <div class="course-content-wrap">
                             <header class="entry-header">
@@ -320,12 +355,96 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-12 col-md-6 col-lg-4 px-25" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
+                    <div class="course-content">
+                        <figure class="course-thumbnail">
+                            <a><img src="images/uiux.jpg" alt=""></a>
+                        </figure>
+                        <div class="course-content-wrap">
+                            <header class="entry-header">
+                                <h2 class="entry-title"><a>Ui/Ux</a></h2>
+                                <div class="entry-meta flex align-items-center">
+                                    <div class="course-date">Crafting digital experiences for user delight.</div>
+                                </div>
+                            </header>
+                            <footer class="entry-footer flex justify-content-between align-items-center">
+                                <div class="course-ratings flex justify-content-end align-items-center btn">
+                                   <a href="https://forms.gle/E6NZ2S6V92Z9AtgKA" target="_blank">Apply now</a>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 px-25" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
+                    <div class="course-content">
+                        <figure class="course-thumbnail">
+                            <a><img src="images/cyber.jpg" alt=""></a>
+                        </figure>
+                        <div class="course-content-wrap">
+                            <header class="entry-header">
+                                <h2 class="entry-title"><a>Cybersecurity</a></h2>
+                                <div class="entry-meta flex align-items-center">
+                                    <div class="course-date">Protecting digital assets from cyber threats with robust measures.</div>
+                                </div>
+                            </header>
+                            <footer class="entry-footer flex justify-content-between align-items-center">
+                                <div class="course-ratings flex justify-content-end align-items-center btn">
+                                   <a href="https://forms.gle/E6NZ2S6V92Z9AtgKA" target="_blank">Apply now</a>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 px-25" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
+                    <div class="course-content">
+                        <figure class="course-thumbnail">
+                            <a><img src="images/python1.jpg" alt=""></a>
+                        </figure>
+                        <div class="course-content-wrap">
+                            <header class="entry-header">
+                                <h2 class="entry-title"><a>Python Developer</a></h2>
+                                <div class="entry-meta flex align-items-center">
+                                    <div class="course-date">Crafting efficient, scalable, and versatile software solutions.</div>
+                                </div>
+                            </header>
+                            <footer class="entry-footer flex justify-content-between align-items-center">
+                                <div class="course-ratings flex justify-content-end align-items-center btn">
+                                   <a href="https://forms.gle/E6NZ2S6V92Z9AtgKA" target="_blank">Apply now</a>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 px-25" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
+                    <div class="course-content">
+                        <figure class="course-thumbnail">
+                            <a><img src="images/java1.jpg" alt=""></a>
+                        </figure>
+                        <div class="course-content-wrap">
+                            <header class="entry-header">
+                                <h2 class="entry-title"><a>Java Developer</a></h2>
+                                <div class="entry-meta flex align-items-center">
+                                    <div class="course-date">Code architect creating powerful applications.</div>
+                                </div>
+                            </header>
+                            <footer class="entry-footer flex justify-content-between align-items-center">
+                                <div class="course-ratings flex justify-content-end align-items-center btn">
+                                   <a href="https://forms.gle/E6NZ2S6V92Z9AtgKA" target="_blank">Apply now</a>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
                
                
             </div>
         </div>
     </section>
-    <section class="latest-news-events">
+    <section class="latest-news-events" data-aos="zoom-in">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -345,12 +464,57 @@
                     <div>
                         <p>Don't miss out on the chance to kick-start your career with an internship that truly makes a difference. Join GrowIntern and embark on a transformative journey that will shape your future success.  
                              </p>
+                             <p>
+                                Ready to take the next step? Explore our internship opportunities and start your journey with GrowIntern today.</p>
                         
                         <p style="font-weight: bold;"> Apply now and let us help you unlock your full potential!</p>
+                        <footer class="entry-footer flex justify-content-between align-items-center">
+                                <div class="course-ratings flex justify-content-end align-items-center btn">
+                                   <a href="https://forms.gle/E6NZ2S6V92Z9AtgKA" target="_blank">Apply now</a>
+                                </div>
+                            </footer>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+    <section class="latest-news-events latest-news-events2" data-aos="zoom-in">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <header class="heading flex justify-content-between align-items-center">
+                        <h2 class="entry-title">How GrowIntern Works!</h2>
+                    </header>
+                </div>
+                
+                <div class="col-12 col-lg-6 mt-5 mt-lg-0">
+                    <div>
+                       <p>At GrowIntern, we fuel career journeys by carefully curating internship experiences. The process begins with a multitude of applications from aspiring individuals across diverse backgrounds. Through a meticulous selection process, we identify outstanding candidates who demonstrate exceptional potential and align with our values. These chosen individuals are then offered GrowIntern internships, where their unique skills and aspirations are matched with tailored opportunities. </p>
+                       <p>It's not just about internships; it's about fostering growth and propelling promising talent into the professional world. Join us at GrowIntern,</p>
+                        
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="featured-event-content">
+                        <figure class="event-thumbnail position-relative m-0">
+                            <a ><img src="images/work.jpg" alt=""></a>
+                            
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial-section" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
+       <div class="mid-container">
+        <h2 class="entry-title">Unlock Your Potential with GrowIntern: The Internship Experience You Deserve!</h2>
+       <div class="mid-text">Transforming Minds Through Internships.</div>
+        
+         </div>
     </section>
    
     <footer class="site-footer" id="Contact">
@@ -360,7 +524,7 @@
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="foot-about">
                             <div class="">
-                                <h1 class="bottom-logo"><a href="index-2.html" rel="home">Grow<span>intern</span></a></h1>
+                                <h1 class="bottom-logo"><a href="index.html" rel="home">Grow<span>intern</span></a></h1>
                             </div>
                             <p>TRANSFORMING MINDS THROUGH INTERNSHIPS </p>
                             <p class="footer-copyright">
@@ -375,7 +539,7 @@
                         <div class="quick-links flex flex-wrap">
                             <h2 class="w-100">Quick Links</h2>
                             <ul class="w-50">
-                                <li><a href="index-2.html">Home </a></li>
+                                <li><a href="index.html">Home </a></li>
                                 <li><a href="#About">About </a></li>
                                 <li><a href="#Internships">Internships </a></li>
                               
@@ -384,8 +548,8 @@
                         </div>
                     </div>
                     <div class="link-column flex">
-                        <h4 style="color: #383749;">Follow us</h4>
-                        <a href="https://www.linkedin.com/company/growintern/" target="_blank" class="hover-link footer-link">Linkdin <span><i class="fa-brands fa-linkedin"></i></span></a>
+                        <h4 style="color: #383749;">Follow Us</h4>
+                        <a href="https://www.linkedin.com/company/growintern/" target="_blank" class="hover-link footer-link">Linkdin <span><i class="fa-brands  fa-linkedin"></i></span></a>
                         <a href="https://www.facebook.com/profile.php?id=100094901855504" target="_blank" class="hover-link footer-link">Facebook <span><i class="fa-brands fa-facebook"></i></span></a>
                         <a href="https://www.instagram.com/grow_intern/"  target="_blank" class="hover-link footer-link">Instagram <span><i class="fa-brands fa-instagram"></i></span></a>
                         <a href="https://twitter.com/growintern" target="_blank" class="hover-link footer-link">Twitter <span><i class="fa-brands fa-twitter"></i></span></a>
@@ -397,6 +561,13 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+   AOS.init();
+   </script>
+
     <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="https://kit.fontawesome.com/5b16ec1da7.js" crossorigin="anonymous"></script>
     <script type='text/javascript' src='js/jquery.js'></script>

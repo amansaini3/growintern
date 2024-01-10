@@ -17,7 +17,7 @@ img {
 
 /*links*/
 a {
-    color: #383749;
+    color: #757686;
 }
 
 a:visited {
@@ -480,6 +480,9 @@ a.btn:hover {
 .about-section {
     padding: 100px 0;
     background: #f7f7f7;
+}
+.about-section2 {
+    background: #ffffff;
 }
 
 .about-section .heading {
@@ -1015,4 +1018,8 @@ p.footer-copyright {
         margin-left: 18px;
         margin-top: 10px;
     }
+  }
+
+  .latest-news-events2{
+    background: #f7f7f7;
   }
