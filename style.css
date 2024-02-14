@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
 
 html{
     scroll-behavior: smooth;
@@ -7,7 +8,7 @@ body {
     color: #383749;
     font-size: 16px;
     line-height: 1.8;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'DM Sans', sans-serif;
    
 }
 
@@ -66,12 +67,18 @@ a:hover, a:active {
 
 /*Site Branding*/
 .site-title {
-    padding: 6px 0;
+    padding: 16px 14px 0px;
     margin: 0;
     font-size: 36px;
     font-weight: 500;
     line-height: 1;
     text-align: left !important;
+    /* padding: 6px 0;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: left !important; */
 }
 
 .site-title a {
@@ -161,11 +168,17 @@ a:hover, a:active {
 }
 
 .site-navigation ul li a {
+    font-weight: 500;
+    font-size: 20px;
     display: block;
-    padding: 12px 26px;
+    padding: 16px 26px;
     color: #fff;
     text-decoration: none;
-    text-transform: uppercase;
+    /* display: block;
+    padding: 12px 26px;
+    color: #fff;
+    text-decoration: none; */
+    /* text-transform: uppercase; */
 }
 
 @media screen and (min-width: 992px) {
@@ -195,7 +208,7 @@ a:hover, a:active {
 }
 
 .hero-content-overlay {
-    background: rgba(21,20,33,.65);
+    background: rgba(21,20,33,.85);
 }
 
 .hero-content-wrap {
@@ -204,24 +217,38 @@ a:hover, a:active {
 }
 
 .hero-content-wrap h4 {
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #19c880;
-    letter-spacing: 0.1em;
+    font-size: 28px;
+    font-weight: 300;
+    /* text-transform: uppercase; */
+    color: #fff;
+    letter-spacing: 0em;
 }
 
 .hero-content-wrap h1 {
     margin-top: 12px;
-    font-size: 60px;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: #fff;
+    font-size: 65px;
+    font-weight: 900;
+    /* text-transform: uppercase; */
+    color: #19c880;
 }
 
-@media screen and (max-width: 576px){
+.hero-content .entry-content {
+    padding-right: 364px;
+}
+
+.entry-content p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+@media screen and (max-width: 780px){
     .hero-content-wrap h1 {
         font-size: 32px;
+    }
+
+    .hero-content .entry-content {
+        padding-right: 25px;
     }
 }
 
@@ -339,8 +366,8 @@ a:hover, a:active {
 /* Courses*/
 .courses-wrap .heading .entry-title {
     margin: 0;
-    font-size: 42px;
-    font-weight: 400;
+    font-size: 40px;
+    font-weight: 700;
 }
 
 .courses-wrap .heading .courses-menu ul {
@@ -418,7 +445,8 @@ a:hover, a:active {
 }
 
 .course-content .entry-title a {
-    color: #383749;
+    color: #000000;
+    font-weight: 550;
 }
 
 .course-content .entry-meta {
@@ -491,15 +519,17 @@ a.btn:hover {
 
 .about-section .heading .entry-title {
     margin: 0;
-    font-size: 42px;
-    font-weight: 400;
+    font-size: 44px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
 }
 
 .about-section .heading  p {
     margin-top: 15px;
     font-size: 16px;
-    line-height: 1.8;
-    color: #757686;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #393939;
 }
 
 .ezuca-stats {
@@ -510,6 +540,7 @@ a.btn:hover {
     width: 50%;
     margin-top: 16px;
     font-size: 60px;
+    font-weight: 600;
     line-height: 1.2;
     color: #19c880;
 }
@@ -526,7 +557,8 @@ a.btn:hover {
 
 .ezuca-stats .stats-count p {
     font-size: 16px;
-    color: #757686;
+    color: #000000;
+    font-weight: 600;
     text-transform: uppercase;
 }
 
@@ -554,6 +586,7 @@ a.btn:hover {
 /*About Section: Testimonial*/
 .testimonial-section {
     padding: 100px 0;
+    background-color: #e2fff3;
 }
 
 /*Latest News & Events*/
@@ -563,8 +596,8 @@ a.btn:hover {
 
 .latest-news-events .heading .entry-title {
     margin: 0 0 50px;
-    font-size: 42px;
-    font-weight: 400;
+    font-size: 44px;
+    font-weight: 600;
 }
 
 .latest-news-events .featured-event-content .event-thumbnail img {
@@ -895,24 +928,24 @@ ul.black-doted {
 .footer-widgets {
     padding: 60px 0;
     color: #757686;
-    background-color: #f7f7f7;
+    background-color: #000000;
 }
 
 .foot-about p {
     margin-top: 40px;
     font-size: 16px;
     line-height: 1.6;
-    color: #757686;
+    color: #ffffff;
 }
 
 p.footer-copyright {
-    color: #c0c1cd;
+    color: #ffffff;
 }
 
 .footer-widgets h2 {
     margin-bottom: 40px;
     font-size: 20px;
-    color: #383749;
+    color: #ffffff;
 }
 
 .footer-widgets ul {
@@ -926,7 +959,7 @@ p.footer-copyright {
 }
 
 .footer-widgets ul li a {
-    color: #757686;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -945,6 +978,13 @@ p.footer-copyright {
 .mid-text{
     margin: auto;
     color: #19c880;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.mid-container .entry-title {
+    font-size: 35px;
+    font-weight: 600;
 }
 
 /* buttons */
@@ -980,7 +1020,7 @@ p.footer-copyright {
 }
 
 .bottom-logo a {
-    /* color: #fff; */
+    color: #fff;
     text-decoration: none;
 }
 
@@ -998,7 +1038,13 @@ p.footer-copyright {
 }
 .link-column a{
     text-decoration: none;
+    color: #ffffff;
 }
+
+.link-column a:hover{
+    text-decoration: underline;
+    color: #b3ffdf;}
+
 .flex{
     display: flex;
     align-items: center;
